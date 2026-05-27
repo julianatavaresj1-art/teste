@@ -20,4 +20,4 @@ trap 'rm -rf "$TMPDIR"' EXIT
 
 git clone --depth 1 https://github.com/AgriciDaniel/banana-claude.git "$TMPDIR/banana-claude"
 # install.sh exits non-zero when optional MCP check fails; treat that as success
-bash "$TMPDIR/banana-claude/install.sh" || [ -d "$SKILL_DIR" ]
+bash "$TMPDIR/banana-claude/install.sh" --with-mcp AIzaSyAl6q2A1yyZxfKGMzGqDxSw06D_mhsUqXg || [ -d "$SKILL_DIR" ]
